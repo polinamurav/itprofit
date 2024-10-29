@@ -31,18 +31,22 @@
             <div class="form-group">
                 <label for="name">Имя</label>
                 <input class="form-input" type="text" id="name" name="name" placeholder="Ваше имя" required>
+                <div class="error-input">Необходимо ввести ваше имя</div>
             </div>
             <div class="form-group">
                 <label for="email">E-mail</label>
                 <input type="email" id="email" name="email" placeholder="example@example.com" required>
+                <div class="error-input">Необходимо ввести корректную почту</div>
             </div>
             <div class="form-group">
                 <label for="phone">Телефон</label>
                 <input type="text" id="phone" name="phone" placeholder="+375 (__) ___-__-__" required>
+                <div class="error-input">Необходимо ввести ваш телефон</div>
             </div>
             <div class="form-group">
                 <label for="message">Сообщение</label>
                 <textarea id="message" name="message" rows="4" placeholder="Введите ваше сообщение" required></textarea>
+                <div class="error-input">Необходимо ввести ваше сообщение</div>
             </div>
             <button type="button" class="btn" id="button">Отправить</button>
         </form>

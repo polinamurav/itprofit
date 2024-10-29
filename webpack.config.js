@@ -10,6 +10,12 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         publicPath: '/'
     },
+    resolve: {
+        alias: {
+            Styles: path.resolve(__dirname, 'src/styles/')
+        },
+        extensions: ['.js', '.scss']
+    },
     devServer: {
         static: {
             directory: path.join(__dirname, 'public'),
