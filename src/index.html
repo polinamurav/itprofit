@@ -1,10 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>itProfit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/js/jquery.min.js" defer></script>
+    <script src="/js/inputmask.min.js"></script>
 </head>
 <body>
+<div class="feedback">
+    <div class="container">
+        <div class="feedback-text">
+            <div class="feedback-text-title">
+                <span>Форма</span> обратной связи
+            </div>
+            <div class="feedback-text-message">
+                Мы всегда рады услышать ваше мнение! Если у вас есть вопросы, предложения или комментарии, пожалуйста,
+                заполните форму обратной связи ниже. Ваши отзывы очень важны для нас и помогут улучшить наш сервис
+            </div>
+            <button type="button" class="btn giftButton">
+                <div class="giftButton-circle">
+                    <div class="giftButton-circle-small"></div>
+                    <div class="giftButton-circle-ave"></div>
+                    <div class="giftButton-circle-big"></div>
+                </div>
+                <div class="giftButton-text">Получить подарок!</div>
+            </button>
+        </div>
+        <form class="feedback-form">
+            <div class="form-group">
+                <label for="name">Имя</label>
+                <input class="form-input" type="text" id="name" name="name" placeholder="Ваше имя" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="example@example.com" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Телефон</label>
+                <input type="text" id="phone" name="phone" placeholder="+375 (__) ___-__-__" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Сообщение</label>
+                <textarea id="message" name="message" rows="4" placeholder="Введите ваше сообщение" required></textarea>
+            </div>
+            <button type="button" class="btn" id="button">Отправить</button>
+        </form>
+    </div>
+</div>
 
+<div class="loader-main">
+    <div class="loader"></div>
+</div>
+
+<div class="popup" id="popup">
+    <div class="popup-content">
+        <h2>Вам открыт подарок!</h2>
+        <p>Напишите в комментариях к обратной связи "ПОДАРОК" чтобы получить скидку 10% на следующую покупку!</p>
+        <button class="close-popup" id="close-popup">Закрыть</button>
+    </div>
+</div>
 </body>
 </html>
